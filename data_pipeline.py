@@ -11,7 +11,7 @@ default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
     'start_date': datetime(2023, 7, 17),
-    'email': ['clebersguimaraes@gmail.com'],
+    'email': ['xxxxxxxx@gmail.com'],
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
@@ -22,11 +22,11 @@ default_args = {
 def extract_mysql_data():
     try:
         conn = mysql.connector.connect(
-            host='192.168.2.5',
+            host='192.168.0.0',
             port=3306,
             database='adventureworks',
-            user='root',
-            password='rio@123'
+            user='airflow',
+            password='******'
         )
 
         cur = conn.cursor()
