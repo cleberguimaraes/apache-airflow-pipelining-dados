@@ -42,7 +42,7 @@ Além de garantir que o usuário do Airflow tenha permissões adequadas para est
 
 Servidor do Banco de Dados (192.168.00.0)
 
-1. Verifique se o usuário do Airflow tem as permissões corretas para acessar o banco de dados `adventureworks` no servidor remoto `192.168.2.5`. O usuário deve ter privilégios para executar consultas (SELECT) na tabela `purchaseorderdetail`.
+1. Verifique se o usuário do Airflow tem as permissões corretas para acessar o banco de dados `adventureworks` no servidor remoto `192.168.0.0`. O usuário deve ter privilégios para executar consultas (SELECT) na tabela `purchaseorderdetail`.
 
 2. Certifique-se de que o servidor MySQL permita conexões de clientes remotos. Verifique as configurações no arquivo de configuração do MySQL (normalmente `my.cnf` ou `mysql.conf.d/mysqld.cnf`) e confirme que o parâmetro `bind-address` não está configurado para aceitar apenas conexões locais. Se necessário, ajuste-o para aceitar conexões de outros endereços IP.
 
